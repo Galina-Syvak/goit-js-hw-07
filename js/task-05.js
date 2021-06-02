@@ -5,4 +5,8 @@ inputEl.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
   nameEl.textContent = event.currentTarget.value;
+
+  if (event.currentTarget.value == '') {
+    nameEl.textContent = 'незнакомец';
+  }
 }
