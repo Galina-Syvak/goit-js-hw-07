@@ -18,7 +18,7 @@ imagesContainer.classList = 'gallery__list';
 
 const elements = images.map(
   ({ url, alt }) =>
-    `<li class="gallery__item"><img src="${url}" alt="${alt}"></img></ul>`,
+    `<li class="gallery__item"><img src="${url}" alt="${alt}" width="410" /></li>`,
 );
 
-imagesContainer.insertAdjacentHTML('beforeend', [...elements]);
+imagesContainer.insertAdjacentHTML('beforeend', elements.join(' '));
